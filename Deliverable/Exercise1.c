@@ -42,7 +42,7 @@ int main()
 									{
 										printf( "Start codon: %d, End codon: %d, Length: %d.\n", i+1, j+1, (j-i) +3 );
 										valid_cr = 1;
-										i= j+1;
+										i = j+1; // Keep reading after the first stop codon for another coding region
 										break;
 									}
 
