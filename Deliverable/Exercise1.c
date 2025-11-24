@@ -19,7 +19,7 @@ int main()
 		valid_cr = 0;
 
 		// First check length, we need at least 6 nucleotides
-		if ( len <6 )
+		if ( len < 6 )
 			{
 				printf("Invalid data! Sequence is too short.\n");
 				continue;
@@ -40,7 +40,7 @@ int main()
 								( seq [ j ] == 'T' && seq [ j+1 ] == 'A' && seq [ j+2 ] == 'G') ||
 								( seq [ j ] == 'T' && seq [ j+1 ] == 'G' && seq [ j+2 ] == 'A'))
 									{
-										printf( "Start codon: %d, End codon: %d, Length: %d.\n", i+1, j+1, (j-i) +3 );
+										printf( "Start codon: %d, End codon: %d, Length: %d.\n", i+1, j+1, (j-i) + 3 );
 										valid_cr = 1;
 										i = j+1; // Keep reading after the first stop codon for another coding region
 										break;
