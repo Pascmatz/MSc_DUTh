@@ -1,0 +1,1 @@
+A program that reads nucleotide sequences from the standard input, and examines them one by one to see whether or not they contain a typical/simple prokaryotic coding sequence (with a start codon, one of the stop codons at the end of the coding region, and no other stop codons in between).
